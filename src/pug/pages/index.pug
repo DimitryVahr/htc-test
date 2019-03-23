@@ -1,0 +1,90 @@
+doctype html
+html(lang="ru-RU")
+    head
+        title Test
+        meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
+        link(rel="stylesheet", href="static/css/css-reset.css")
+        link(rel="stylesheet", href="static/css/main.css")
+        script(src="static/js/libs.min.js")
+        script(src="static/js/main.js")
+    body
+        article.tabs
+            h1 Tabs
+            input(type="radio" id="tab_profile" name="tabs" checked)
+            label(for="tab_profile" class="profile_label") Профиль
+            input(type="radio" id="tab_animal-list" name="tabs") 
+            label(for="tab_animal-list" class="animal-list_label") Друзья пользователя
+
+            section.container-profile
+                h2 Profile
+                .profile_user-photo_submit
+                    img(src="static/img/profile/user-photo.jpg", alt="UserPic" class="profile__user-photo")
+                    input(type="submit" class="profile__submit" value="Добавить в друзья")
+                .profile-information
+                    span.profile__name
+                    span.profile__address г. Нижние Шахты
+                    table.profile__table-contacts
+                        tr 
+                            td Семейное положение
+                            td холост
+                        tr 
+                            td Телефон
+                            td
+                                span.profile__phone
+                        tr
+                            td E-mail
+                            td  
+                                a(href="#" class="profile__mail")
+                    .interests
+                        span.interests__title Интересы
+                        .container-interest-list
+                            a(href="#" class="interests__item") музыка
+                            a(href="#" class="interests__item") компьютеры
+                            a(href="#" class="interests__item") радио
+            section.container-animals
+                h2 Animals
+                .animals-list
+                    .amimals__item
+                        img(src="static/img/animals/photo1.jpg", alt="animal-photo" class="animal-photo")
+                        .animal-information
+                            a(href="#").animal__name Лев Бронштейн
+                            span.animal__address г. Ханты-Мансийск
+                            span.animal__online Online
+                    .amimals__item
+                        img(src="static/img/animals/photo2.jpg", alt="animal-photo" class="animal-photo")
+                        .animal-information
+                            a(href="#").animal__name Находка Капитал
+                            span.animal__address г. Усть-Бельск
+                    .amimals__item
+                        img(src="static/img/animals/photo3.jpg", alt="animal-photo" class="animal-photo")
+                        .animal-information
+                            a(href="#").animal__name Яндекс Петренко
+                            span.animal__address г. Пермь
+                    .amimals__item
+                        img(src="static/img/animals/photo4.jpg", alt="animal-photo" class="animal-photo")
+                        .animal-information
+                            a(href="#").animal__name Успех Возможностей
+                            span.animal__address г. Радонеж
+                            span.animal__online Online
+                    .amimals__item
+                        img(src="static/img/animals/photo5.jpg", alt="animal-photo" class="animal-photo")
+                        .animal-information
+                            a(href="#").animal__name Инна Нашлась
+                            span.animal__address г. Омск
+                            span.animal__online Online
+                    .amimals__item
+                        img(src="static/img/animals/photo6.jpg", alt="animal-photo" class="animal-photo")
+                        .animal-information
+                            a(href="#").animal__name Алла Подольская
+                            span.animal__address г. Петропавловск-Камчатский
+                            span.animal__online Online
+        .form-add-interest
+            span.add-interest__title Добавить интерес
+            input(type="text" class="interest__input" id="interest__input" placeholder="Интерес*")
+            label(for="interest__input") Напишите интерес 
+            span.add-interest__explanation 
+                |* Обязательное поле
+            button(class="interest__button") Добавить
+
+            
+                

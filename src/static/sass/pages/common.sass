@@ -1,0 +1,62 @@
+html
+    background-color: rgb(225, 226, 225)
+body
+    padding-top: 80px
+.tabs
+    position: relative  
+    padding: 0px 
+    margin: 0 auto
+    width: 487px
+    h1
+        display: none
+.tabs>input  
+    display: none 
+.tabs>section 
+    display: none
+    height: 248px
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.31)
+    background: #FFFFFF
+    padding: 15px
+    border-bottom-left-radius: 5px
+    border-bottom-right-radius: 5px
+    border-top-right-radius: 5px
+    h2
+        display: none
+.tabs>label 
+    display: inline-block
+    text-align: center
+    background: rgb(16, 121, 173)
+    cursor: pointer
+    font-family: Arial
+    color: rgb(255, 255, 255)
+    font-size: 14px
+    font-weight: 400
+    line-height: 32px
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.38)
+
+.animal-list_label
+    width: 169px
+    height: 32px
+    margin-left: 9px
+.profile_label
+    width: 92px
+    height: 32px
+.tabs>input:checked + label 
+    font-family: Arial
+    color:  #000000
+    font-size: 14px
+    font-weight: 400
+    background: #FFFFFF
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0)
+#tab_profile:checked ~ .container-profile, #tab_animal-list:checked ~ .container-animals
+    display: flex
+
+.new_input, #new_name
+    border: 1px solid rgb(225, 226, 225)
+#new_name
+    font-size: 21px
+
+
+
